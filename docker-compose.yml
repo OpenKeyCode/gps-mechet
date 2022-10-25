@@ -2,8 +2,8 @@ version: "3.7"
 services:
     app:
         platform: linux/x86_64
-        container_name: app_maschit_back
-        image: app_maschit_back
+        container_name: app_maschit_front
+        image: app_maschit_front
         ports:
             - 8876:80
         build:
@@ -19,7 +19,7 @@ services:
                 ipv4_address: 172.29.0.2
 #    db:
 #        platform: linux/x86_64
-#        container_name: db_uzinfocom_new_back
+#        container_name: db_maschit_new_back
 #        image: postgres:14.5-alpine
 #        restart: unless-stopped
 #        environment:
@@ -35,7 +35,7 @@ services:
 #            - 8101:5432
 #        networks:
 #            default:
-#                ipv4_address: ${NETWORK_DEFAULT}.3
+#                ipv4_address: 172.29.0.3
 #    pgadmin:
 #        platform: linux/x86_64
 #        container_name: pgadmin_uzinfocom_back
